@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>Gamedev Phaser Content Kit</h1>
+<h1>HTML 5 Game Development</h1>
 <h2>Article 01: Initialize the framework</h2>
 
 <p>Before we can start writing the game's functionality, we need to create a basic structure to render the game inside. This can be done using HTML - Phaser framework will generate the Canvas element on its own.</p>
@@ -45,12 +45,6 @@ function update() {}
 <p>Our Canvas will be 480 pixels high and 320 pixels wide. Using <code>Phaser.AUTO</code> we are setting up an automatic way to render the game - the other two options are <code>CANVAS</code> and <code>WEBGL</code>. We can set one of them explicitly or use <code>AUTO</code> to let Phaser decide which one to use. It usually works in a way that if the WebGL context is available, the framework will use it, and fall back to Canvas 2D context if it's not available.</p>
 
 <p>We don't have the Canvas element created on our own, so we don't have to enter any reference <code>id</code> and leave it blank as <code>null</code>. The last object contains the three key function names reserved for Phaser - we will use the same names to keep it clean. The <code>preload</code> function takes care of preloading the assets, <code>create</code> is executed once when everything is loaded and ready, and the <code>update</code> function is executed on every frame. These three are enough to make the proper mechanism of loading, starting and updating our game loop.</p>
-
-<h2 id="Compare_your_code">Compare your code</h2>
-
-<p>Here's the full source code of the first lesson, running live in a JSFiddle:</p>
-
-<p><iframe width="100%" height="150" src="https://jsfiddle.net/end3r/h6v7xztt/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
 
 <h2 id="Next_steps">Next steps</h2>
 
